@@ -1,0 +1,23 @@
+const paths={
+Dashboard:'<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/>',
+Events:'<rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4m8-4v4M4 10h16"/>',
+Applications:'<path d="M7 3h7l4 4v14H7zM14 3v5h4M10 12h5m-5 4h5"/>',
+Calendar:'<rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4m8-4v4M4 10h16M8 14h2m4 0h2m-8 3h2"/>',
+Products:'<path d="m3 12 9-9h8v8l-9 10z"/><circle cx="16" cy="7" r="1"/>',
+Inventory:'<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10M7.5 4.5l9 5"/>',
+Sales:'<path d="M4 20v-5m6 5V9m6 11V3m5 17V7"/>',
+Customers:'<circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 4v3"/>',
+'Booth Planner':'<path d="m3 11 9-9 9 9M5 10v11h14V10M9 21v-8h6v8M12 2v6"/>',
+Packing:'<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>',
+Tasks:'<path d="M9 3h10v18H4V8m-1-4 2 2 4-4m0 10h6m-6 4h6"/>',
+Expenses:'<path d="M5 3h14v19l-3-2-4 2-4-2-3 2zM8 7h8m-8 4h8m-8 4h5"/>',
+Analytics:'<path d="M4 20V12m6 8V7m6 13V3m5 17H2"/>',
+Reports:'<path d="M4 3h13v17H4zM8 7h5m-5 4h5m-5 4h5m7-9v17H7"/>',
+Goals:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
+Notes:'<path d="M5 3h14v18H5zM8 7h8m-8 4h8m-8 4h5"/>',
+Templates:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M10 9v12"/>',
+'Theme Studio':'<path d="m14 4 6 6M3 21l2-7L16 3a2 2 0 0 1 3 0l2 2a2 2 0 0 1 0 3L10 19z"/>',
+'Backup & Data':'<path d="M7 18H6a4 4 0 0 1-1-8 7 7 0 0 1 13-2 5 5 0 0 1 0 10h-1M12 22V12m-4 4 4-4 4 4"/>',
+Help:'<circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 2-3 2-3 4m0 3v.1"/>',
+Profit:'<path d="M5 21c1-9 6-14 14-18 2 10-2 17-10 16M5 21l10-11"/>'};
+export const icon=(name,size=22)=>`<svg class="ui-icon" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]||paths.Dashboard}</svg>`;

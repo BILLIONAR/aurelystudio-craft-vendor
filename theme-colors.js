@@ -1,0 +1,8 @@
+const rgb=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+export const mix=(a,b,t)=>'#'+rgb(a).map((v,i)=>Math.round(v*(1-t)+rgb(b)[i]*t).toString(16).padStart(2,'0')).join('');
+const lum=h=>rgb(h).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
+export const contrast=(a,b)=>(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);
+const ink=bg=>contrast('#000000',bg)>contrast('#ffffff',bg)?'#000000':'#ffffff';
+function readable(c,bg){const end=ink(bg);for(let n=0;n<=10;n++){const t=mix(c,end,n/10);if(contrast(t,bg)>=4.5)return t}return end}
+export function themeColors(s){const bg=s.night?mix('#10141a',s.main,.14):s.background,baseInk=ink(bg),dark=s.night||baseInk==='#ffffff',card=dark?mix(mix(bg,'#000000',.18),s.main,.055):mix(mix(bg,'#ffffff',.65),s.main,.075),sidebar=s.night?mix('#141820',s.main,.32):s.main,sideInk=ink(sidebar),soft=mix(card,s.accent,s.night?.17:.12);return {
+'--accent':s.main,'--gold':s.accent,'--bg':bg,'--ink':readable(baseInk,bg),'--muted':readable(mix(baseInk,bg,.35),bg),'--card':card,'--line':mix(card,baseInk,.25),'--primary-ink':ink(s.main),'--heading-color':readable(s.main,card),'--sidebar-bg':sidebar,'--sidebar-ink':sideInk,'--sidebar-muted':readable(mix(sideInk,sidebar,.25),sidebar),'--sidebar-line':mix(sidebar,sideInk,.25),'--sidebar-active':mix(sidebar,sideInk,.15),'--soft':soft,'--soft-ink':readable(s.main,soft),'--header-bg':mix(card,s.main,s.night?.09:.12),'--field-bg':s.night?mix(card,'#000000',.18):mix(card,'#ffffff',.75),'--chart':readable(s.main,card),'--terra':readable(s.accent,card),'--chart-accent':readable(s.accent,card)};}

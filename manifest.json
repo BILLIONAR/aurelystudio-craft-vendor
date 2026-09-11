@@ -1,0 +1,25 @@
+{
+  "name": "AurelyStudio Craft Fair Vendor OS",
+  "short_name": "Vendor OS",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f3ec",
+  "theme_color": "#343e2c",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "scope": "./",
+  "id": "./",
+  "description": "AurelyStudio craft market planning, stock, custom orders and daily close."
+}

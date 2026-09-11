@@ -1,0 +1,21 @@
+AurelyStudio — Craft Fair Vendor OS
+
+Open index.html through a local or HTTPS web server. For Netlify, upload the contents of this package with index.html at the root.
+
+Use Market Tools for event break-even estimates, production shortages, cash closing and time/profit per hour. Add stock targets through Inventory or Market Tools. Targets can exceed stock; record production only when made.
+
+Products supports individual items, separately stocked variants, and sets made from individual products. Sales consume stock. Return records preserve the original sale; choose whether returned items are sellable. Refunded sales are locked.
+
+Custom Orders keeps specifications, delivery date, total price and paid amount. Deposits are separate from sales revenue and the market cash drawer. Record fulfilled sales once for profit reporting. Cash paid out adjusts the drawer; record the business expense separately when appropriate.
+
+Print Studio creates price cards, your own care cards, shop QR signs and date-filtered reports. Choose A4 or Letter, select products/sections and use Print / Save as PDF. QR signs generate locally. Always scan a printed proof before using it at a market.
+
+Theme Studio saves colors, font choices, handwriting coverage, Night Mode and Extra Calm Mode immediately. The official AurelyStudio logo stays unchanged.
+
+Data stays in this browser. No automatic cloud sync. Export JSON backups regularly and before clearing browser data or changing devices. Restore replaces this browser's current data after confirmation. Browser backup files may contain customer contact details; keep them private.
+
+Install app is available under Backup & Data. HTTPS or localhost is required. iPhone/iPad: Safari > Share > Add to Home Screen. Android/desktop: browser menu > Install app / Add to Home screen. On private hosting, initial access may still require an internet connection and host sign-in.
+
+Calculation estimates are planning tools, not tax accounting or guaranteed earnings. Report dates follow the saved transaction/expense/event dates. Histories are retained across years until explicitly deleted.
+
+Third-party license files are included in fonts/ and vendor/. Application identity: AurelyStudio.
