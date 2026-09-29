@@ -15,7 +15,7 @@ export function playIntro() {
   layer.innerHTML = `<div class="entrance-lockup">
     <img class="entrance-logo" src="./logo-a.svg" alt="AurelyStudio gold A logo" width="112" height="112">
     <div class="entrance-wordmark">AurelyStudio</div>
-    <div class="entrance-purpose">Craft Fair Vendor OS</div>
+    <div class="entrance-purpose">Craft Fair Planner · Maker Business</div>
     <div class="entrance-journey" aria-label="Plan, prepare and sell">
       <div class="entrance-step"><span>${icon('Events',24)}</span><small>Plan</small></div>
       <i class="entrance-connector" aria-hidden="true"></i>

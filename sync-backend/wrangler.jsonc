@@ -1,0 +1,57 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "aurelystudio-maker-sync",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-28",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGINS": "https://billionar.github.io,http://127.0.0.1:4177,http://localhost:4177",
+    "MAX_WORKSPACES": "500"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "aurelystudio-maker-sync",
+      "database_id": "d9eac351-edd9-426c-9654-086e1f13a8ef",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "env": {
+    "local": {
+      "name": "aurelystudio-maker-sync-local",
+      "vars": {
+        "ALLOWED_ORIGINS": "http://127.0.0.1:4177,http://localhost:4177",
+        "MAX_WORKSPACES": "500"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "aurelystudio-maker-sync-local",
+          "database_id": "00000000-0000-0000-0000-000000000000",
+          "migrations_dir": "migrations"
+        }
+      ],
+      "ratelimits": [
+        {
+          "name": "ENROLL_RATE",
+          "namespace_id": "202609292",
+          "simple": {
+            "limit": 100,
+            "period": 60
+          }
+        }
+      ]
+    }
+  },
+  "account_id": "fd99e968600143d8308a794cf2cad988",
+  "ratelimits": [
+    {
+      "name": "ENROLL_RATE",
+      "namespace_id": "202609291",
+      "simple": {
+        "limit": 10,
+        "period": 60
+      }
+    }
+  ]
+}

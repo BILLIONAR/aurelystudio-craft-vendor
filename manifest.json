@@ -1,6 +1,6 @@
 {
-  "name": "AurelyStudio Craft Fair Vendor OS",
-  "short_name": "Vendor OS",
+  "name": "AurelyStudio Maker Business \u00b7 Craft Fair Planner",
+  "short_name": "Maker Business",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#f5f3ec",
@@ -21,5 +21,5 @@
   ],
   "scope": "./",
   "id": "./",
-  "description": "AurelyStudio craft market planning, stock, custom orders and daily close."
+  "description": "Flexible inventory, customer orders, payments and private device sync."
 }

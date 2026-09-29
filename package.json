@@ -1,0 +1,12 @@
+{
+  "name": "aurelystudio-craft-fair-planner",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync:deploy": "wrangler deploy --config sync-backend/wrangler.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "4.143.0"
+  }
+}

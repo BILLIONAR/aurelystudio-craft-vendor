@@ -1,21 +1,38 @@
-AurelyStudio — Craft Fair Vendor OS
+AurelyStudio — Craft Fair Planner · Maker Business
+Version 3.0.0
 
-Open index.html through a local or HTTPS web server. For Netlify, upload the contents of this package with index.html at the root.
+OPEN YOUR APP
+https://billionar.github.io/aurelystudio-craft-vendor/
 
-Use Market Tools for event break-even estimates, production shortages, cash closing and time/profit per hour. Add stock targets through Inventory or Market Tools. Targets can exceed stock; record production only when made.
+On iPhone or iPad, open the link in Safari. To install, use Share > Add to Home Screen. Desktop and Android browsers also support installation. This is the full app, with no demo limits.
 
-Products supports individual items, separately stocked variants, and sets made from individual products. Sales consume stock. Return records preserve the original sale; choose whether returned items are sellable. Refunded sales are locked.
+CONNECT YOUR DEVICES ONCE
+On your first device, open Device Sync > Create my private workspace. On the other device, use the private link or code shown under Connect another device. Connect another device can copy a private link or show a QR code. Keep the code private: anyone with it can read and change your synced workspace.
 
-Custom Orders keeps specifications, delivery date, total price and paid amount. Deposits are separate from sales revenue and the market cash drawer. Record fulfilled sales once for profit reporting. Cash paid out adjusts the drawer; record the business expense separately when appropriate.
+Saved changes sync automatically while the app is open and online. The other device checks about every 20 seconds and when it becomes visible. Check for Synced before closing the app. Offline changes stay saved locally and sync after reconnection. If both devices change the same record, the app asks which details to keep.
 
-Print Studio creates price cards, your own care cards, shop QR signs and date-filtered reports. Choose A4 or Letter, select products/sections and use Print / Save as PDF. QR signs generate locally. Always scan a printed proof before using it at a market.
+Safari and a Home Screen app may use separate local storage. Connect each browser or installed app you use. Keep a separate copy of your code; business backups do not include it.
 
-Theme Studio saves colors, font choices, handwriting coverage, Night Mode and Extra Calm Mode immediately. The official AurelyStudio logo stays unchanged.
+YOUR PRODUCTS
+Inventory accepts your own main categories, subcategories and item types. Beadable and Carabiner are suggestions, not restrictions. Add keychains, bag charms, bookmarks or any other products later. Each stocked item has its own count, selling price, cost to make and notes. Add made stock when new items are finished.
 
-Data stays in this browser. No automatic cloud sync. Export JSON backups regularly and before clearing browser data or changing devices. Restore replaces this browser's current data after confirmation. Browser backup files may contain customer contact details; keep them private.
+YOUR ORDERS
+Save a customer, order date, due date, source, status and multiple items. Sources include Online, Word of Mouth, Local Shop and Craft Show. Add item details and making notes. Custom items can be ordered without deducting inventory.
 
-Install app is available under Backup & Data. HTTPS or localhost is required. iPhone/iPad: Safari > Share > Add to Home Screen. Android/desktop: browser menu > Install app / Add to Home screen. On private hosting, initial access may still require an internet connection and host sign-in.
+Open orders hold stocked items: available stock decreases while physical stock stays unchanged. Mark an order Delivered when fulfilled: the app creates one linked sale and deducts stock once. Additional payments do not create another sale. Delivered item details remain history; record returns through the linked sale.
 
-Calculation estimates are planning tools, not tax accounting or guaranteed earnings. Report dates follow the saved transaction/expense/event dates. Histories are retained across years until explicitly deleted.
+PAYMENTS
+Record Zelle, Venmo, Cash and other methods, including deposits and later payments. See total, paid and remaining. The app records payments; it does not send, collect or request money. Receipts use recorded payments. Profit uses delivered sales and item costs. These are planning records, not tax accounting.
 
-Third-party license files are included in fonts/ and vendor/. Application identity: AurelyStudio.
+YOUR FAIR TOOLS
+Events, applications, booth planning, packing, stock history, returns, expenses, goals, reports and market tools remain available. Exact dated records remain in history across years.
+
+PRINT AND PERSONALIZE
+Print Studio includes Order book, Inventory list, price cards, care cards, shop QR signs and market reports. Choose A4 or Letter in the app and browser print dialog. Print or save as PDF. Scan a printed QR proof before using it.
+
+Theme Studio saves palettes, independent main/accent/background colors, interface and heading fonts, five handwriting accents, Night Mode and Extra Calm Mode. Forms and money stay readable. The official AurelyStudio logo remains unchanged.
+
+BACKUPS
+Use Backup & Data > Export backup regularly and before clearing browser storage. Import replaces the workspace after confirmation, then syncs restored records if connected. Older AurelyStudio v1/v2 backups are supported; old free-text orders remain historical records. Backups from another seller require a separate compatibility check.
+
+Open through HTTPS or a local web server. Double-clicking index.html is not a supported mobile/sync installation method. Included font and QR library licenses remain in fonts/ and vendor/. Application identity and ownership: AurelyStudio.
